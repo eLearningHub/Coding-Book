@@ -1,4 +1,4 @@
-name: leetcode-book
+name: coding-book
 
 dependencies:
   - jupyter-book=0.13.1
