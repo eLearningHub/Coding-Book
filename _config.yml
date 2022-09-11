@@ -4,7 +4,8 @@ author: eLearning Hub
 logo: logo.png
 execute:
   execute_notebooks: force
-
+repository:
+  url: https://github.com/eLearningHub/coding-book
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
