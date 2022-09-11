@@ -1,4 +1,7 @@
-name: coding-book
-
+channels:
+  - conda-forge
+  - defaults
 dependencies:
-  - jupyter-book=0.13.1
+  - pip
+  - pip:
+      - -r requirements.txt
