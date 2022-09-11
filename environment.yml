@@ -1,3 +1,4 @@
+name: coding-book
 channels:
   - conda-forge
   - defaults
