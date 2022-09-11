@@ -31,9 +31,11 @@ jobs:
           conda info
           conda list
           printenv | sort
-      - name: Conda activate
+      - name: Conda init
         run: |
           conda init bash
+      - name: Conda activate
+        run: |
           conda activate coding-book
       - name: Build Jupyter Book
         run: make book
