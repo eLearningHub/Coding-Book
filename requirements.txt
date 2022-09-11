@@ -1,1 +1,2 @@
 jupyter-book==0.13.1
+markupsafe==2.0.1
