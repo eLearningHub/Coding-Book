@@ -27,11 +27,10 @@ jobs:
           auto-activate-base: false
           auto-update-conda: true
       - name: Conda info
-        shell: bash -l {0}
-        run: conda info
-      - name: Conda list
-        shell: pwsh
-        run: conda list
+        run: |
+          conda info
+          conda list
+          printenv | sort
       - name: Build Jupyter Book
         run: make book
       - name: add a nojekyll file
