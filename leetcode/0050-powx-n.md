@@ -90,7 +90,7 @@ print("error=",Pow(x, n)-ans)
 ```{code-cell} ipython3
 x = 10.0
 n = 309
-ans = 1e308
+ans = 1e309
 print(Pow(x, n))
 print("error=",Pow(x, n)-ans)
 ```
