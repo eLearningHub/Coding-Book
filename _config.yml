@@ -1,7 +1,7 @@
 # In _config.yml
 title: Data Structures and Algorithms 
 author: eLearning Hub
-logo: logo.png
+logo: images/Collegica.png
 execute:
   execute_notebooks: force
 repository:
