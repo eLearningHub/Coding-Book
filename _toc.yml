@@ -1,4 +1,7 @@
 format: jb-book
 root: intro
-chapters:
-- file: markdown
+
+parts:
+- caption: Getting Started
+  chapters:
+    - file: markdown
