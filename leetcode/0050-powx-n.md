@@ -24,7 +24,8 @@ Constraints:
 
 ```{code-cell} ipython3
 :tags: ["hide-input"]
-IPython.display('g9YQyYi4IQQ')
+from IPython.display import YouTubeVideo
+YouTubeVideo('g9YQyYi4IQQ')
 ```
 
 ```{code-cell} ipython3
