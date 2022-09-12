@@ -1,11 +1,6 @@
 format: jb-book
 root: intro
 
-parts:
-- caption: Getting Started
-  chapters:
-    - file: markdown
-
 chapters:
 - file: markdown
 - file: leetcode/index
