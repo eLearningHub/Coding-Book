@@ -2,10 +2,35 @@
 title: Data Structures and Algorithms 
 author: eLearning Hub
 logo: images/Collegica.png
+
 execute:
   execute_notebooks: 'off'
+
 repository:
   url: https://github.com/eLearningHub/coding-book
+  branch: main
+
+latex:
+  latex_documents:
+    targetname: coding_book.tex
+
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_repository_button: true
+  use_edit_page_button : true
+  use_issues_button    : true
+  home_page_in_navbar  : false
+
+
+launch_buttons:
+  binder             : true
+  binderhub          : true
+  binderhub_url: https://mybinder.org
+  jupyterhub         : false
+  thebe              : false
+  colab              : false
