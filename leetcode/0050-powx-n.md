@@ -22,17 +22,45 @@ Constraints:
 
 ```{code-cell} ipython3
 :tags: [pow_x_n]
-class Solution:
-    def myPow(self, x: float, n: int) -> float:
-        def helper(x, n):
-            if x == 0:
-                return 0
-            if n == 0:
-                return 1
+def Pow(self, x: float, n: int) -> float:
+    def helper(x, n):
+        if x == 0:
+            return 0
+        if n == 0:
+            return 1
 
-            res = helper(x * x, n // 2)
-            return x * res if n % 2 else res
+        res = helper(x * x, n // 2)
+        return x * res if n % 2 else res
 
-        res = helper(x, abs(n))
-        return res if n >= 0 else 1 / res
+    res = helper(x, abs(n))
+    return res if n >= 0 else 1 / res
+```
+
+## Testing
+
+Example 1:
+```{code-cell} ipython3
+:tags: [ex_1]
+x = 2.00000
+n = 10
+ans = 1024.00000
+print(Pow(x, n))
+```
+
+Example 2:
+```{code-cell} ipython3
+:tags: [ex_2]
+x = 2.10000
+n = 3
+ans = 9.26100
+print(Pow(x, n))
+```
+
+Example 3:
+```{code-cell} ipython3
+:tags: [ex_3]
+x = 2.0000
+n = -2
+ans = 0.25000
+print(Pow(x, n))
 ```
