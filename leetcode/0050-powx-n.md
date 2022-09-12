@@ -29,18 +29,20 @@ YouTubeVideo('g9YQyYi4IQQ')
 ```
 
 ```{code-cell} ipython3
-def Pow(x: float, n: int) -> float:
-    def helper(x, n):
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        if n ==0:
+          return 1
         if x == 0:
-            return 0
-        if n == 0:
-            return 1
-
-        res = helper(x * x, n // 2)
-        return x * res if n % 2 else res
-
-    res = helper(x, abs(n))
-    return res if n >= 0 else 1 / res
+          return 0
+        if n < 0:
+            x = 1/x
+            n = abs(n)
+        m = n // 2
+        r = n % 2
+        p = self.myPow(x*x, m)
+        return p if r==0 else x*p
+Sol = Solution()
 ```
 
 ## Testing
@@ -51,8 +53,9 @@ def Pow(x: float, n: int) -> float:
 x = 2.00000
 n = 10
 ans = 1024.00000
-print(Pow(x, n))
-print("error=",Pow(x, n)-ans)
+y = Sol.Pow(x, n)
+print(y)
+print("error=",y-ans)
 ```
 
 ### Example 2
@@ -61,8 +64,9 @@ print("error=",Pow(x, n)-ans)
 x = 2.10000
 n = 3
 ans = 9.26100
-print(Pow(x, n))
-print("error=",Pow(x, n)-ans)
+y = Sol.Pow(x, n)
+print(y)
+print("error=",y-ans)
 ```
 
 ### Example 3
@@ -71,8 +75,9 @@ print("error=",Pow(x, n)-ans)
 x = 2.0000
 n = -2
 ans = 0.25000
-print(Pow(x, n))
-print("error=",Pow(x, n)-ans)
+y = Sol.Pow(x, n)
+print(y)
+print("error=",y-ans)
 ```
 
 ### Example 4
@@ -81,8 +86,9 @@ print("error=",Pow(x, n)-ans)
 x = 10.0
 n = 308
 ans = 1e308
-print(Pow(x, n))
-print("error=",Pow(x, n)-ans)
+y = Sol.Pow(x, n)
+print(y)
+print("error=",y-ans)
 ```
 
 ### Example 5
@@ -91,11 +97,13 @@ print("error=",Pow(x, n)-ans)
 x = 10.0
 n = 309
 ans = 1e309
-print(Pow(x, n))
-print("error=",Pow(x, n)-ans)
+y = Sol.Pow(x, n)
+print(y)
+print("error=",y-ans)
 ```
 
 ## Note 1
+
 Maximum integer for 64 bit Python:
 
 ```{code-cell} ipython3
