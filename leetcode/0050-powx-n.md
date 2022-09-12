@@ -45,6 +45,7 @@ def Pow(self, x: float, n: int) -> float:
 Example 1:
 ```{code-cell} ipython3
 :tags: [ex_1]
+import sys
 x = 2.00000
 n = 10
 ans = 1024.00000
