@@ -30,7 +30,7 @@ html:
 launch_buttons:
   binder             : true
   binderhub          : true
-  binderhub_url: "https://mybinder.org"
-  colab_url: "https://colab.research.google.com"
+  binderhub_url      : "https://mybinder.org"
+  colab_url          : "https://colab.research.google.com"
   jupyterhub         : false
   thebe              : false
