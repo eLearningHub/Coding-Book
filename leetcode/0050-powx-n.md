@@ -48,9 +48,9 @@ def Pow(x: float, n: int) -> float:
 ### Example 1
 
 ```{code-cell} ipython3
-x == 2.00000
-n == 10
-ans == 1024.00000
+x = 2.00000
+n = 10
+ans = 1024.00000
 print(Pow(x, n))
 print("error=",Pow(x, n)-ans)
 ```
