@@ -32,10 +32,8 @@ class Solution:
         if n < 0:
             x = 1/x
             n = abs(n)
-        m = n // 2
-        r = n % 2
-        p = self.myPow(x*x, m)
-        return p if r==0 else x*p
+        p = self.myPow(x*x, n // 2)
+        return p if (n % 2)==0 else x*p
 Sol = Solution()
 ```
 
