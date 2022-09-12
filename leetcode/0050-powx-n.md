@@ -23,12 +23,6 @@ Constraints:
 - `-10^4 <= x^n <= 10^4`
 
 ```{code-cell} ipython3
-:tags: ["hide-input"]
-from IPython.display import YouTubeVideo
-YouTubeVideo('g9YQyYi4IQQ')
-```
-
-```{code-cell} ipython3
 class Solution:
     def myPow(self, x: float, n: int) -> float:
         if n ==0:
@@ -45,7 +39,7 @@ class Solution:
 Sol = Solution()
 ```
 
-## Testing
+## Examples
 
 ### Example 1
 
@@ -102,7 +96,8 @@ print(y)
 print("error=",y-ans)
 ```
 
-## Note 1
+## Notes
+### Note 1
 
 Maximum integer for 64 bit Python:
 
@@ -115,7 +110,7 @@ sys.maxsize
 print(2**63-1)
 ```
 
-## Note 2
+### Note 2
 
 Maximum float for 64 bit Python:
 
@@ -123,7 +118,7 @@ Maximum float for 64 bit Python:
 sys.float_info.max
 ```
 
-## Note 3
+### Note 3
 
 Did you know that `pow(0,0)` returns `1`? 
 
@@ -131,3 +126,13 @@ Did you know that `pow(0,0)` returns `1`?
 - Floating point arithmetic is already mathematically incorrect in many ways that are far scarier than $0^0=1$.
 
 Ref: [Why does Python return 1 for pow(0,0) which is mathematically wrong?](https://www.quora.com/Why-does-Python-return-1-for-pow-0-0-which-is-mathematically-wrong)
+
+## References
+
+### NeetCode
+
+```{code-cell} ipython3
+:tags: ["hide-input"]
+from IPython.display import YouTubeVideo
+YouTubeVideo('g9YQyYi4IQQ')
+```
