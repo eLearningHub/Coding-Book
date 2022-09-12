@@ -4,7 +4,7 @@ author: eLearning Hub
 logo: images/Collegica.png
 
 execute:
-  execute_notebooks: 'off'
+  execute_notebooks: 'auto'
 
 repository:
   url: https://github.com/eLearningHub/coding-book
