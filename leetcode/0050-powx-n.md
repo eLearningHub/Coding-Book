@@ -95,6 +95,7 @@ print(Pow(x, n))
 print("error=",Pow(x, n)-ans)
 ```
 
+## Note 1
 Maximum integer for 64 bit Python:
 
 ```{code-cell} ipython3
@@ -106,8 +107,19 @@ sys.maxsize
 print(2**63-1)
 ```
 
+## Note 2
+
 Maximum float for 64 bit Python:
 
 ```{code-cell} ipython3
 sys.float_info.max
 ```
+
+## Note 3
+
+Did you know that `pow(0,0)` returns `1`? 
+
+- You get a lot of simplification by allowing 00=1 and not a lot is lost.
+- Floating point arithmetic is already mathematically incorrect in many ways that are far scarier than $0^0=1$.
+
+Ref: [Why does Python return 1 for pow(0,0) which is mathematically wrong?](https://www.quora.com/Why-does-Python-return-1-for-pow-0-0-which-is-mathematically-wrong)
