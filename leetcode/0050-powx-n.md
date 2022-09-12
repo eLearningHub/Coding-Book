@@ -1,3 +1,3 @@
-# pow(x, n)
+# 50. pow(x, n)
 
 Implement `pow(x, n)`, which calculates `x` raised to the power `n` (i.e., $x^n$).
