@@ -32,6 +32,6 @@ launch_buttons:
   binderhub          : true
   binderhub_url      : "https://mybinder.org"
   thebe              : true
-  colab_url          : false
+  colab              : false
   jupyterhub         : false
 
