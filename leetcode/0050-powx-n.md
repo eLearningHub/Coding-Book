@@ -1,13 +1,11 @@
 ---
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
+file_format: mystnb
 kernelspec:
   display_name: Python 3
   language: python
   name: python3
+mystnb:
+    execution_mode: 'inline'
 ---
 
 (powx-n)=
