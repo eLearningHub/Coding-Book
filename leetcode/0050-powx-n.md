@@ -22,7 +22,10 @@ Constraints:
 - `-10^4 <= xn <= 10^4`
 
 ```{code-cell} ipython3
-:tags: [pow_x_n]
+---
+mystnb:
+  number_source_lines: true
+---
 def Pow(self, x: float, n: int) -> float:
     def helper(x, n):
         if x == 0:
