@@ -2,7 +2,6 @@ format: jb-book
 root: intro
 
 chapters:
-- file: markdown
 - file: leetcode/index
   sections:
   - file: leetcode/0050-powx-n
