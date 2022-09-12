@@ -3,7 +3,7 @@ title: Data Structures and Algorithms
 author: eLearning Hub
 logo: images/Collegica.png
 execute:
-  execute_notebooks: force
+  execute_notebooks: 'off'
 repository:
   url: https://github.com/eLearningHub/coding-book
 # Add a bibtex file so that we can create citations
