@@ -53,7 +53,7 @@ Sol = Solution()
 x = 2.00000
 n = 10
 ans = 1024.00000
-y = Sol.Pow(x, n)
+y = Sol.myPow(x, n)
 print(y)
 print("error=",y-ans)
 ```
@@ -64,7 +64,7 @@ print("error=",y-ans)
 x = 2.10000
 n = 3
 ans = 9.26100
-y = Sol.Pow(x, n)
+y = Sol.myPow(x, n)
 print(y)
 print("error=",y-ans)
 ```
@@ -75,7 +75,7 @@ print("error=",y-ans)
 x = 2.0000
 n = -2
 ans = 0.25000
-y = Sol.Pow(x, n)
+y = Sol.myPow(x, n)
 print(y)
 print("error=",y-ans)
 ```
@@ -86,7 +86,7 @@ print("error=",y-ans)
 x = 10.0
 n = 308
 ans = 1e308
-y = Sol.Pow(x, n)
+y = Sol.Sol.myPowPow(x, n)
 print(y)
 print("error=",y-ans)
 ```
@@ -97,7 +97,7 @@ print("error=",y-ans)
 x = 10.0
 n = 309
 ans = 1e309
-y = Sol.Pow(x, n)
+y = Sol.myPow(x, n)
 print(y)
 print("error=",y-ans)
 ```
