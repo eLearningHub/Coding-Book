@@ -5,3 +5,9 @@ parts:
 - caption: Getting Started
   chapters:
     - file: markdown
+
+chapters:
+- file: markdown
+- file: leetcode/index
+  sections:
+  - file: leetcode/0050-powx-n
