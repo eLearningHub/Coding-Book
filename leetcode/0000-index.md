@@ -4,7 +4,7 @@ LeetCode is a collection of coding problem sets often used in technical intervie
 
 | # | Title | Difficulty |
 |---| ----- | ---------- |
-|50|["Pow(x, n)"](https://leetcode.com/problems/powx-n/)|Medium|
+|50|["Pow(x, n)"](powx-n)|Medium|
 
 ## References
 

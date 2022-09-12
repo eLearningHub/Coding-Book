@@ -10,6 +10,7 @@ kernelspec:
   name: python3
 ---
 
+(powx-n)=
 # [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
 
 Implement `pow(x, n)`, which calculates `x` raised to the power `n` (i.e., `x^n`).
