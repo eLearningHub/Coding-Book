@@ -7,3 +7,5 @@ sphinx==4.5.0
 jupytext==1.14.1
 markdown-it-py==1.1.0
 attrs==21.4.0
+sphinxcontrib-mermaid==0.7.1
+sphinxcontrib-wavedrom==3.0.4

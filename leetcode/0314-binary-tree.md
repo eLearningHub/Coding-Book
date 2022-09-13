@@ -24,6 +24,14 @@ If two nodes are in the same row and column, the order should be from left to ri
 
 Input: `[3,9,20,null,null,15,7]`
 
+``` mermaid
+graph TB;
+    A((3))-->B((9))
+    A-->C((20));
+    C-->D((15))
+    C-->E((7))
+```
+
 Output:
 
 ``` python
