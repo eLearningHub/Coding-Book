@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: Install Python dependencies
         run: |
-          sudo apt-get install python3-pip
+          sudo apt-get install python3-pip graphviz
           pip install -r requirements.txt
           PATH="${PATH}:${HOME}/.local/bin"
       - name: Build Jupyter Book
