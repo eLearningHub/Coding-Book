@@ -34,7 +34,7 @@ graph TB;
 
 Output:
 
-```{python}
+```python
 [
   [9],
   [3,15],
