@@ -76,7 +76,7 @@ Input: `[3,9,8,4,0,1,7,null,null,null,2,5]` (0's right child is 2 and 1's left c
 ```{code-cell} ipython3
 from binarytree import build
 tree = [3,9,8,4,0,1,7,None,None,None,2,5]
-t = build(values)
+t = build(tree)
 graph = t.graphviz()
 graph.render()
 ```
