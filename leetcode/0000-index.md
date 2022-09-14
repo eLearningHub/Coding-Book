@@ -1,6 +1,6 @@
 # LeetCode Problems
 
-LeetCode is a collection of coding problem sets often used in technical interviews and you can found them [here](https://leetcode.com/problemset/all/).
+LeetCode is a collection of coding problem sets often used in technical interviews. You can found them [here](https://leetcode.com/problemset/all/).
 
 | # | Title | Difficulty |
 |---| ----- | ---------- |

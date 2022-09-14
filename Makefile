@@ -1,5 +1,5 @@
 conda-env:
-	conda env create --file environment.yml -n leetcode-book
+	conda env create --file environment.yml -n coding-book
 
 requirements:
 	pip install -r requirements.txt
