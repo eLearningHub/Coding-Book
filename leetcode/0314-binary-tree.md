@@ -22,7 +22,7 @@ If two nodes are in the same row and column, the order should be from left to ri
 
 ```{code-cell} ipython3
 class Solution:
-  def tree2columns(t: list):
+  def tree2columns(self, t: list):
     M={}
     M.update({t[0]:[0,0]})
     i_max=len(t)//2
