@@ -18,6 +18,33 @@ Given a binary tree, return the vertical order traversal of its nodes' values. (
 
 If two nodes are in the same row and column, the order should be from left to right.
 
+## Solution
+
+```{code-cell} ipython3
+class Solution:
+  def tree2columns(t: list):
+    M={}
+    M.update({t[0]:[0,0]})
+    i_max=len(t)//2
+    j_min = 0
+    j_max = 0
+    for i in range(0,i_max):
+      if t[2*i+1] != None:
+        j = M[t[i]][1]-1
+        M.update({t[2*i+1]:[M[t[i]][0]+1,j]})
+        j_min = min(j_min, j)
+      if t[2*i+2] != None:
+        j = M[t[i]][1]+1
+        M.update({t[2*i+2]:[M[t[i]][0]+1,j]})
+        j_max = max(j_max, j)
+    columns = [[] for _ in range(0,j_max-j_min+1)]
+    for n in t:
+      if n != None:
+        columns[M[n][1]-j_min].append(n)
+    return columns
+Sol = Solution()
+```
+
 ## Examples
 
 ### Examples 1
@@ -41,6 +68,12 @@ Output:
   [20],
   [7]
 ]
+```
+
+```{code-cell} ipython3
+t = [3,9,20,None,None,15,7]
+ans = [[9], [3,15], [20], [7]]
+y = Sol.tree2columns(t)
 ```
 
 ### Example 2
@@ -69,6 +102,12 @@ Output:
 ]
 ```
 
+```{code-cell} ipython3
+t = [3,9,8,4,0,1,7]
+ans = [[4], [9], [3,0,1], [8], [7]]
+y = Sol.tree2columns(t)
+```
+
 ### Example 3
 
 Input: `[3,9,8,4,0,1,7,null,null,null,2,5]` (0's right child is 2 and 1's left child is 5)
@@ -91,4 +130,10 @@ Output:
   [8,2],
   [7]
 ]
+```
+
+```{code-cell} ipython3
+t = [3,9,8,4,0,1,7,None,None,None,2,5]
+ans = [[4], [9,5], [3,0,1], [8,2], [7]]
+y = Sol.tree2columns(t)
 ```

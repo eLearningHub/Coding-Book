@@ -22,6 +22,8 @@ Constraints:
 - `-2^31 <= n <= 2^31-1`
 - `-10^4 <= x^n <= 10^4`
 
+## Solution
+
 ```{code-cell} ipython3
 class Solution:
     def myPow(self, x: float, n: int) -> float:
