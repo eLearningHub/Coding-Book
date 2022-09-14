@@ -78,7 +78,7 @@ from binarytree import build
 tree = [3,9,8,4,0,1,7,None,None,None,2,5]
 t = build(tree)
 graph = t.graphviz()
-graph.render()
+graph
 ```
 
 Output:
