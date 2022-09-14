@@ -22,25 +22,30 @@ If two nodes are in the same row and column, the order should be from left to ri
 
 ```{code-cell} ipython3
 class Solution:
-  def tree2columns(self, t: list):
+  def tree2columns(t: list):
     M={}
-    M.update({t[0]:[0,0]})
-    i_max=len(t)//2
+    M.update({0:[0,0]})
+    t_len = len(t)
+    i_max=t_len//2
     j_min = 0
     j_max = 0
     for i in range(0,i_max):
-      if t[2*i+1] != None:
-        j = M[t[i]][1]-1
-        M.update({t[2*i+1]:[M[t[i]][0]+1,j]})
+      k = 2*i+1
+      if t[k] != None:
+        j = M[i][1]-1
+        M.update({k:[M[i][0]+1,j]})
         j_min = min(j_min, j)
-      if t[2*i+2] != None:
-        j = M[t[i]][1]+1
-        M.update({t[2*i+2]:[M[t[i]][0]+1,j]})
-        j_max = max(j_max, j)
+      k = k+1
+      if k < t_len:
+        if t[k] != None:
+          j = M[i][1]+1
+          M.update({k:[M[i][0]+1,j]})
+          j_max = max(j_max, j)
     columns = [[] for _ in range(0,j_max-j_min+1)]
-    for n in t:
-      if n != None:
-        columns[M[n][1]-j_min].append(n)
+    t_i = range((len(t)))
+    for i in range((len(t))):
+      if t[i] != None:
+        columns[M[i][1]-j_min].append(t[i])
     return columns
 Sol = Solution()
 ```
@@ -74,6 +79,8 @@ Output:
 t = [3,9,20,None,None,15,7]
 ans = [[9], [3,15], [20], [7]]
 y = Sol.tree2columns(t)
+print(f"Answer: {ans}")
+print(f"Result: {y}")
 ```
 
 ### Example 2
@@ -106,6 +113,8 @@ Output:
 t = [3,9,8,4,0,1,7]
 ans = [[4], [9], [3,0,1], [8], [7]]
 y = Sol.tree2columns(t)
+print(f"Answer: {ans}")
+print(f"Result: {y}")
 ```
 
 ### Example 3
@@ -136,4 +145,6 @@ Output:
 t = [3,9,8,4,0,1,7,None,None,None,2,5]
 ans = [[4], [9,5], [3,0,1], [8,2], [7]]
 y = Sol.tree2columns(t)
+print(f"Answer: {ans}")
+print(f"Result: {y}")
 ```
