@@ -35,13 +35,10 @@ class Solution:
       ordered_str = ''
       for ch in order:
         if ch in s:
-          for i in range(len(s)):
-            if s[i] == ch:
-              ordered_str = ordered_str+ch
+          ordered_str = ordered_str+ch*s.count(ch)
+          s=s.replace(ch, '')
       
-      for ch in s:
-        if ch not in order:
-          ordered_str = ordered_str+ch
+      ordered_str = ordered_str+s
       return ordered_str
 Sol = Solution()
 ```
@@ -75,11 +72,11 @@ Sol.customSortString(order, s)
 
 ### Example 3
 
-Input: order = "cbafe", s = "kerep"
-Output: "eekrp"
+Input: order = "kqep", s = "pekeq"
+Output: "kqeep"
 
 ```{code-cell} ipython3
-order = "cbafe"
-s = "kerep"
+order = "kqep"
+s = "pekeq"
 Sol.customSortString(order, s)
 ```
