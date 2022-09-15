@@ -80,7 +80,7 @@ print("error=",y-ans)
 x = 10.0
 n = 308
 ans = 1e308
-y = Sol.myPowPow(x, n)
+y = Sol.myPow(x, n)
 print(y)
 print("error=",y-ans)
 ```
