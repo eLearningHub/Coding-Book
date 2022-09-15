@@ -4,6 +4,7 @@ root: intro
 chapters:
 - file: leetcode/0000-index
   sections:
+  - file: leetcode/0002-add-two-numbers
   - file: leetcode/0050-powx-n
   - file: leetcode/0314-binary-tree
   - file: leetcode/0719-custom-sort-string.md

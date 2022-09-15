@@ -4,6 +4,7 @@ LeetCode is a collection of coding problem sets often used in technical intervie
 
 | # | Title | Difficulty |
 |---| ----- | ---------- |
+|2|[Add Two Numbers](add-two)|Medium|
 |50|[Pow(x, n)](powx-n)|Medium|
 |314|[Binary Tree Vertical Order Traversal](tree-314)|Medium|
 |719|[Custom Sort String](string-719)|Medium|
