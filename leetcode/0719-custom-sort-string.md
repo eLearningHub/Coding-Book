@@ -80,3 +80,11 @@ order = "kqep"
 s = "pekeq"
 Sol.customSortString(order, s)
 ```
+
+## References
+
+```{code-cell} ipython3
+:tags: ["hide-input"]
+from IPython.display import YouTubeVideo
+YouTubeVideo('edluuHln06g')
+```
