@@ -32,6 +32,18 @@ Return any permutation of s that satisfies this property.
 ```{code-cell} ipython3
 class Solution:
     def customSortString(self, order: str, s: str) -> str:
+      ordered_str = ''
+      for ch in order:
+        if ch in s:
+          for i in range(len(s)):
+            if s[i] == ch:
+              ordered_str = ordered_str+ch
+      
+      for ch in s:
+        if ch not in order:
+          ordered_str = ordered_str+ch
+      return ordered_str
+Sol = Solution()
 ```
 
 ## Examples
@@ -40,11 +52,34 @@ class Solution:
 
 Input: order = "cba", s = "abcd"
 Output: "cbad"
-Explanation: 
+Explanation:
 "a", "b", "c" appear in order, so the order of "a", "b", "c" should be "c", "b", and "a". 
 Since "d" does not appear in order, it can be at any position in the returned string. "dcba", "cdba", "cbda" are also valid outputs.
+
+```{code-cell} ipython3
+order = "cba"
+s = "abcd"
+Sol.customSortString(order, s)
+```
 
 ### Example 2
 
 Input: order = "cbafg", s = "abcd"
 Output: "cbad"
+
+```{code-cell} ipython3
+order = "cbafg"
+s = "abcd"
+Sol.customSortString(order, s)
+```
+
+### Example 3
+
+Input: order = "cbafe", s = "kerep"
+Output: "eekrp"
+
+```{code-cell} ipython3
+order = "cbafe"
+s = "kerep"
+Sol.customSortString(order, s)
+```
