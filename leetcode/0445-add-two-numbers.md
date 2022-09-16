@@ -79,6 +79,9 @@ class Solution:
 Sol = Solution()
 ```
 
+Runtime: 171 ms, faster than 6.57% of Python3 online submissions for Add Two Numbers II.
+Memory Usage: 13.9 MB, less than 45.47% of Python3 online submissions for Add Two Numbers II.
+
 ## Examples
 
 ### Example 1
