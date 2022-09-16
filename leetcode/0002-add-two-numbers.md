@@ -38,18 +38,16 @@ class Solution:
 
     x = l1.val + l2.val + carry
     if x < 10:
-      carry = 0
+      if l1.next == None and l2.next == None:
+        return ListNode(x, None)
+      else:
+        return ListNode(x, self.addTwoNumbers(l1.next, l2.next, 0))
     else:
-      x = x-10
-      carry = 1
-        
-    if l1.next == None and l2.next == None and carry == 0:
-      return ListNode(x, None)
-    
-    if l1.next == None and l2.next == None and carry == 1:
-      return ListNode(x, ListNode(1, None))
-    
-    return ListNode(x, self.addTwoNumbers(l1.next, l2.next, carry))
+      if l1.next == None and l2.next == None:
+        return ListNode(x-10, ListNode(1, None))
+      else:
+        return ListNode(x-10, self.addTwoNumbers(l1.next, l2.next, 1))
+
   def listToListNode(self, l:list) -> ListNode:
     n = len(l)
     listN = ListNode(l[-1])
@@ -65,6 +63,9 @@ class Solution:
 
 Sol = Solution()
 ```
+
+Runtime: 73 ms, faster than 90.11% of Python3 online submissions for Add Two Numbers.
+Memory Usage: 13.9 MB, less than 86.19% of Python3 online submissions for Add Two Numbers.
 
 ## Examples
 
