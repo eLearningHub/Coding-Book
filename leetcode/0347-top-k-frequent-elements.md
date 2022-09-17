@@ -28,6 +28,7 @@ Follow up: Your algorithm's time complexity must be better than O(n log n), wher
 ## Solution
 
 ```{code-cell} ipython3
+from typing import List
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
       freq = {}
