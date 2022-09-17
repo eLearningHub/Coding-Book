@@ -105,3 +105,10 @@ nums = [-96,839,615,374,209,-579,568,162,949,403,-437,274,-785,73,-329,-608,740,
 
 k=1069
 ```
+
+Output:
+
+```{code-cell} ipython3
+ans = Sol.topKFrequent(nums,k)
+print(ans)
+```
