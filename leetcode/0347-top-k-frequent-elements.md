@@ -84,11 +84,44 @@ Sol2 = Solution2()
 Runtime: 237 ms, faster than 16.96% of Python3 online submissions for Top K Frequent Elements.
 Memory Usage: 18.6 MB, less than 71.64% of Python3 online submissions for Top K Frequent Elements.
 
+### Solution 3
+
+```{code-cell} ipython3
+class Solution3:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+
+      freq = {}
+      for i in nums:
+        if i in freq.keys():
+          freq[i]=freq[i]+1
+        else:
+          freq[i]=1
+      
+      topK = []
+      for i in freq.keys():
+        if len(topK) == 0:
+          topK = [i]
+        else:
+          insert = 0
+          for j in range(len(topK)):
+            if freq[i]>freq[topK[j]]:
+              topK.insert(j,i)
+              insert = 1
+              break
+          if insert ==0:
+            topK.append(i)
+      return topK[0:k]
+Sol3 = Solution3()
+```
+
+Runtime: 299 ms, faster than 5.97% of Python3 online submissions for Top K Frequent Elements.
+Memory Usage: 18.6 MB, less than 91.74% of Python3 online submissions for Top K Frequent Elements.
+
 ## Examples
 
 ### Example 1
 
-Input: 
+Input:
 
 ```{code-cell} ipython3
 nums = [1,1,1,2,2,3]
@@ -98,13 +131,13 @@ k = 2
 Output: [1,2]
 
 ```{code-cell} ipython3
-ans = Sol2.topKFrequent(nums,k)
+ans = Sol3.topKFrequent(nums,k)
 print(ans)
 ```
 
 ### Example 2
 
-Input: 
+Input:
 
 ```{code-cell} ipython3
 nums = [1]
@@ -114,7 +147,7 @@ k = 1
 Output: [1]
 
 ```{code-cell} ipython3
-ans = Sol2.topKFrequent(nums,k)
+ans = Sol3.topKFrequent(nums,k)
 print(ans)
 ```
 
@@ -131,6 +164,6 @@ k=1069
 Output:
 
 ```{code-cell} ipython3
-ans = Sol2.topKFrequent(nums,k)
+ans = Sol3.topKFrequent(nums,k)
 print(ans)
 ```
