@@ -72,12 +72,12 @@ class Solution:
 
       freq = {}
       for i in nums:
-        if str(i) in freq.keys():
-          freq[str(i)]=freq[str(i)]+1
+        if i in freq.keys():
+          freq[i]=freq[i]+1
         else:
-          freq[str(i)]=1
+          freq[i]=1
       
-      return heapq.nlargest(k, [int(_) for _ in freq.keys()], key = lambda i: freq[str(i)])
+      return heapq.nlargest(k, freq.keys(), key = lambda i: freq[i])
 Sol2 = Solution2()
 ```
 
