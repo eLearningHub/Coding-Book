@@ -111,10 +111,10 @@ Memory Usage: 18.6 MB, less than 91.74% of Python3 online submissions for Top K 
 ## Examples
 
 ```{code-cell} ipython3
+:tags: ["hide-input"]
 %load_ext line_profiler
 %load_ext memory_profiler
-import IPython.core
-IPython.core.page = print
+import cProfile
 ```
 
 ### Example 1
@@ -134,15 +134,15 @@ print(ans)
 ```
 
 ```{code-cell} ipython3
-%prun Sol3.topKFrequent(nums,k)
+cProfile.run('Sol3.topKFrequent(nums,k)')
 ```
 
 ```{code-cell} ipython3
-%prun Sol2.topKFrequent(nums,k)
+cProfile.run('Sol2.topKFrequent(nums,k)')
 ```
 
 ```{code-cell} ipython3
-%prun Sol1.topKFrequent(nums,k)
+cProfile.run('Sol1.topKFrequent(nums,k)')
 ```
 
 ### Example 2
@@ -161,10 +161,6 @@ ans = Sol3.topKFrequent(nums,k)
 print(ans)
 ```
 
-```{code-cell} ipython3
-%prun Sol3.topKFrequent(nums,k)
-```
-
 ### Example 3
 
 Input:
@@ -180,4 +176,16 @@ Output:
 ```{code-cell} ipython3
 ans = Sol3.topKFrequent(nums,k)
 print(ans)
+```
+
+```{code-cell} ipython3
+cProfile.run('Sol3.topKFrequent(nums,k)')
+```
+
+```{code-cell} ipython3
+cProfile.run('Sol2.topKFrequent(nums,k)')
+```
+
+```{code-cell} ipython3
+cProfile.run('Sol1.topKFrequent(nums,k)')
 ```
