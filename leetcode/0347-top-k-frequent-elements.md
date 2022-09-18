@@ -131,6 +131,18 @@ Output: [1,2]
 print(ans)
 ```
 
+```{code-cell} ipython3
+%prun Sol3.topKFrequent(nums,k)
+```
+
+```{code-cell} ipython3
+%prun Sol2.topKFrequent(nums,k)
+```
+
+```{code-cell} ipython3
+%prun Sol1.topKFrequent(nums,k)
+```
+
 ### Example 2
 
 Input:
@@ -145,6 +157,10 @@ Output: [1]
 ```{code-cell} ipython3
 ans = Sol3.topKFrequent(nums,k)
 print(ans)
+```
+
+```{code-cell} ipython3
+%prun Sol3.topKFrequent(nums,k)
 ```
 
 ### Example 3
