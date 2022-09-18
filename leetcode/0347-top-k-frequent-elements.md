@@ -36,10 +36,7 @@ class Solution1:
       topElems = []
 
       for i in nums:
-        if str(i) in freq.keys():
-          freq[str(i)]=freq[str(i)]+1
-        else:
-          freq[str(i)]=1
+        freq[i] = 1 + freq.get(i,0)
         
         if len(topElems) == 0:
           topElems = [i]
@@ -50,7 +47,7 @@ class Solution1:
             topElems.remove(i)
            
           for j in range(len(topElems)):
-            if freq[str(i)]>freq[str(topElems[j])]:
+            if freq[i]>freq[topElems[j]]:
               topElems.insert(j,i)
               ins = 1
               break
@@ -72,10 +69,7 @@ class Solution2:
 
       freq = {}
       for i in nums:
-        if i in freq.keys():
-          freq[i]=freq[i]+1
-        else:
-          freq[i]=1
+        freq[i] = 1 + freq.get(i,0)
       
       return heapq.nlargest(k, freq.keys(), key = lambda i: freq[i])
 Sol2 = Solution2()
@@ -92,10 +86,7 @@ class Solution3:
 
       freq = {}
       for i in nums:
-        if i in freq.keys():
-          freq[i]=freq[i]+1
-        else:
-          freq[i]=1
+        freq[i] = 1 + freq.get(i,0)
       
       topK = []
       for i in freq.keys():
