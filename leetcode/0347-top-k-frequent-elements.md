@@ -110,6 +110,11 @@ Memory Usage: 18.6 MB, less than 91.74% of Python3 online submissions for Top K 
 
 ## Examples
 
+```{code-cell} ipython3
+%load_ext line_profiler
+%load_ext memory_profiler
+```
+
 ### Example 1
 
 Input:
@@ -122,7 +127,7 @@ k = 2
 Output: [1,2]
 
 ```{code-cell} ipython3
-ans = Sol3.topKFrequent(nums,k)
+%time ans = Sol3.topKFrequent(nums,k)
 print(ans)
 ```
 

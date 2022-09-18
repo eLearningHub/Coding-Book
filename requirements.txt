@@ -10,3 +10,6 @@ attrs==21.4.0
 sphinxcontrib-mermaid==0.7.1
 sphinxcontrib-wavedrom==3.0.4
 binarytree==6.5.1
+line_profiler==3.5.1
+memory_profiler==0.60.0
+pympler==1.0.1
