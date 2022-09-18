@@ -113,6 +113,8 @@ Memory Usage: 18.6 MB, less than 91.74% of Python3 online submissions for Top K 
 ```{code-cell} ipython3
 %load_ext line_profiler
 %load_ext memory_profiler
+import IPython.core
+IPython.core.page = print
 ```
 
 ### Example 1
