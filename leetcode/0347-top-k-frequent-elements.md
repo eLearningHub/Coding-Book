@@ -133,13 +133,19 @@ Output: [1,2]
 print(ans)
 ```
 
+Solution 3:
+
 ```{code-cell} ipython3
 cProfile.run('Sol3.topKFrequent(nums,k)')
 ```
 
+Solution 2:
+
 ```{code-cell} ipython3
 cProfile.run('Sol2.topKFrequent(nums,k)')
 ```
+
+Solution 1:
 
 ```{code-cell} ipython3
 cProfile.run('Sol1.topKFrequent(nums,k)')
@@ -178,13 +184,19 @@ ans = Sol3.topKFrequent(nums,k)
 print(ans)
 ```
 
+Solution 3:
+
 ```{code-cell} ipython3
 cProfile.run('Sol3.topKFrequent(nums,k)')
 ```
 
+Solution 2:
+
 ```{code-cell} ipython3
 cProfile.run('Sol2.topKFrequent(nums,k)')
 ```
+
+Solution 1:
 
 ```{code-cell} ipython3
 cProfile.run('Sol1.topKFrequent(nums,k)')
