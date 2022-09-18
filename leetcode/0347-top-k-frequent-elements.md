@@ -81,6 +81,9 @@ class Solution:
 Sol2 = Solution2()
 ```
 
+Runtime: 237 ms, faster than 16.96% of Python3 online submissions for Top K Frequent Elements.
+Memory Usage: 18.6 MB, less than 71.64% of Python3 online submissions for Top K Frequent Elements.
+
 ## Examples
 
 ### Example 1
