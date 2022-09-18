@@ -67,7 +67,7 @@ Sol1 = Solution1()
 
 ```{code-cell} ipython3
 import heapq
-class Solution:
+class Solution2:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
 
       freq = {}
