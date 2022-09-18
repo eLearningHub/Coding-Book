@@ -27,9 +27,10 @@ Follow up: Your algorithm's time complexity must be better than O(n log n), wher
 
 ## Solution
 
+### Solution 1
 ```{code-cell} ipython3
 from typing import List
-class Solution:
+class Solution1:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
       freq = {}
       topElems = []
@@ -59,7 +60,25 @@ class Solution:
           topElems = topElems[0:k]
        
       return topElems
-Sol = Solution()
+Sol1 = Solution1()
+```
+
+### Solution 2
+
+```{code-cell} ipython3
+import heapq
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+
+      freq = {}
+      for i in nums:
+        if str(i) in freq.keys():
+          freq[str(i)]=freq[str(i)]+1
+        else:
+          freq[str(i)]=1
+      
+      return heapq.nlargest(k, [int(_) for _ in freq.keys()], key = lambda i: freq[str(i)])
+Sol2 = Solution2()
 ```
 
 ## Examples
@@ -76,7 +95,7 @@ k = 2
 Output: [1,2]
 
 ```{code-cell} ipython3
-ans = Sol.topKFrequent(nums,k)
+ans = Sol2.topKFrequent(nums,k)
 print(ans)
 ```
 
@@ -92,7 +111,7 @@ k = 1
 Output: [1]
 
 ```{code-cell} ipython3
-ans = Sol.topKFrequent(nums,k)
+ans = Sol2.topKFrequent(nums,k)
 print(ans)
 ```
 
@@ -109,6 +128,6 @@ k=1069
 Output:
 
 ```{code-cell} ipython3
-ans = Sol.topKFrequent(nums,k)
+ans = Sol2.topKFrequent(nums,k)
 print(ans)
 ```
