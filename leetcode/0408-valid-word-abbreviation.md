@@ -66,7 +66,6 @@ class Solution1:
 %load_ext line_profiler
 %load_ext memory_profiler
 import cProfile
-from Solution1 import Solution1
 Sol1 = Solution1()
 ```
 
