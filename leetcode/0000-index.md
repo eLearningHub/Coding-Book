@@ -7,7 +7,7 @@ LeetCode is a collection of coding problem sets often used in technical intervie
 |2|[Add Two Numbers](add-two)|Medium|
 |50|[Pow(x, n)](powx-n)|Medium|
 |314|[Binary Tree Vertical Order Traversal](tree-314)|Medium|
-|0347|[Top k frequent elements](elem-347)|Medium|
+|347|[Top k frequent elements](elem-347)|Medium|
 |445|[Add Two Numbers II](add-two-ii)|Medium|
 |719|[Custom Sort String](string-719)|Medium|
 
