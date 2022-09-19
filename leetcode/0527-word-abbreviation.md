@@ -36,8 +36,7 @@ Note:
 
 ```{code-cell} ipython3
 from typing import List
-from typing import List
-class Solution:
+class Solution1:
     def shorten(self, word: str, i: int) -> str:
       n = len(word)
       if n-i > 3:
@@ -70,8 +69,8 @@ class Solution:
           abbrs[w_abbr] = [w]
         abbrs.pop(key)
 
-      abbr =  [k for k, v in abbrs.items()]
-      return abbr
+      abbr =  {v[0]: k for k, v in abbrs.items()}
+      return [abbr[_] for _ in dict]
 ```
 
 ## Examples
@@ -91,14 +90,5 @@ Input = ["like", "god", "internal", "me", "internet", "interval", "intension","f
 
 Output= ["l2e","god","internal","me","i6t","interval","inte4n","f2e","intr4n"]
 
-print(Sol.wordsAbbreviation(Input))
-```
-
-### Example 2
-
-```{code-cell} ipython3
-s = "apple"
-abbr = "a2e"
-ans = False
-print(Sol1.validWordAbbreviation(s, abbr))
+print(Sol1.wordsAbbreviation(Input))
 ```
