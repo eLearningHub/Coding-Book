@@ -48,10 +48,6 @@ class Solution1:
               i = j
             else:
               if s[i_s] != abbr[i]:
-                print(f'i_s: {i_s}')
-                print(f'i: {i}')
-                print(f's[i_s]: {s[i_s]}')
-                print(f'abbr[i]: {abbr[i]}')
                 is_abbr = False
                 break
               i += 1
