@@ -92,23 +92,27 @@ class Solution3:
         freq[i] = 1 + freq.get(i,0)
       
       topK = []
+      topK_len = 0
       for i in freq.keys():
-        if len(topK) == 0:
+        if topK_len == 0:
           topK = [i]
+          topK_len = 1
         else:
           insert = 0
-          for j in range(len(topK)):
+          for j in range(topK_len):
             if freq[i]>freq[topK[j]]:
               topK.insert(j,i)
+              topK_len += 1
               insert = 1
               break
           if insert ==0:
             topK.append(i)
+            topK_len += 1
       return topK[0:k]
 ```
 
-Runtime: 299 ms, faster than 5.97% of Python3 online submissions for Top K Frequent Elements.
-Memory Usage: 18.6 MB, less than 91.74% of Python3 online submissions for Top K Frequent Elements.
+Runtime: 747 ms, faster than 5.01% of Python3 online submissions for Top K Frequent Elements.
+Memory Usage: 18.6 MB, less than 91.75% of Python3 online submissions for Top K Frequent Elements
 
 ## Examples
 
