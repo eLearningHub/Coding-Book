@@ -9,6 +9,7 @@ chapters:
   sections:
   - file: leetcode/0002-add-two-numbers
   - file: leetcode/0050-powx-n
+  - file: leetcode/0133-clone-graph
   - file: leetcode/0314-binary-tree
   - file: leetcode/0347-top-k-frequent-elements
   - file: leetcode/0408-valid-word-abbreviation
