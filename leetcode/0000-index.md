@@ -10,6 +10,7 @@ LeetCode is a collection of coding problem sets often used in technical intervie
 |347|[Top k frequent elements](elem-347)|Medium|
 |408|[Valid Word Abbreviation](valid-word)|Easy|
 |445|[Add Two Numbers II](add-two-ii)|Medium|
+|527|[Valid Word Abbreviation](word-abbr)|Hard|
 |719|[Custom Sort String](string-719)|Medium|
 
 ## References
@@ -21,3 +22,4 @@ LeetCode is a collection of coding problem sets often used in technical intervie
 * [neetcode-gh/leetcode/c](https://github.com/neetcode-gh/leetcode/tree/main/c)
 * [halfrost/LeetCode-Go](https://github.com/halfrost/LeetCode-Go/tree/master/leetcode)
 * [LeetCode Toolkit (lctk)](https://github.com/chengyutang/lctk)
+* [LeetCode problems in Python](https://github.com/liseyko/CtCI/tree/master/leetcode/problems)
