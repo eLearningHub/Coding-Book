@@ -29,6 +29,7 @@ Follow up: Your algorithm's time complexity must be better than O(n log n), wher
 
 ### Solution 1
 ```{code-cell} ipython3
+%%writefile Solution1.py
 from typing import List
 class Solution1:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
@@ -57,12 +58,14 @@ class Solution1:
           topElems = topElems[0:k]
        
       return topElems
+from Solution1 import Solution1
 Sol1 = Solution1()
 ```
 
 ### Solution 2
 
 ```{code-cell} ipython3
+%%writefile Solution2.py
 import heapq
 class Solution2:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
@@ -72,6 +75,7 @@ class Solution2:
         freq[i] = 1 + freq.get(i,0)
       
       return heapq.nlargest(k, freq.keys(), key = lambda i: freq[i])
+from Solution2 import Solution2
 Sol2 = Solution2()
 ```
 
@@ -81,6 +85,7 @@ Memory Usage: 18.6 MB, less than 71.64% of Python3 online submissions for Top K 
 ### Solution 3
 
 ```{code-cell} ipython3
+%%writefile Solution3.py
 class Solution3:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
 
@@ -102,6 +107,7 @@ class Solution3:
           if insert ==0:
             topK.append(i)
       return topK[0:k]
+from Solution3 import Solution3
 Sol3 = Solution3()
 ```
 
@@ -149,6 +155,24 @@ Solution 1:
 
 ```{code-cell} ipython3
 cProfile.run('Sol1.topKFrequent(nums,k)')
+```
+
+Solution 3:
+
+```{code-cell} ipython3
+%%prun 'Sol3.topKFrequent(nums,k)'
+```
+
+Solution 2:
+
+```{code-cell} ipython3
+%%prun 'Sol2.topKFrequent(nums,k)'
+```
+
+Solution 1:
+
+```{code-cell} ipython3
+%%prun 'Sol1.topKFrequent(nums,k)'
 ```
 
 ### Example 2
