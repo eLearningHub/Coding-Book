@@ -160,19 +160,22 @@ cProfile.run('Sol1.topKFrequent(nums,k)')
 Solution 3:
 
 ```{code-cell} ipython3
-%%prun 'Sol3.topKFrequent(nums,k)'
+%lprun -T lprof3 -f Sol3.topKFrequent Sol3.topKFrequent(nums,k)
+print(open('lprof3', 'r').read())
 ```
 
 Solution 2:
 
 ```{code-cell} ipython3
-%%prun 'Sol2.topKFrequent(nums,k)'
+%lprun -T lprof2 -f Sol2.topKFrequent Sol2.topKFrequent(nums,k)
+print(open('lprof2', 'r').read())
 ```
 
 Solution 1:
 
 ```{code-cell} ipython3
-%%prun 'Sol1.topKFrequent(nums,k)'
+%lprun -T lprof1 -f Sol1.topKFrequent Sol1.topKFrequent(nums,k)
+print(open('lprof1', 'r').read())
 ```
 
 ### Example 2
