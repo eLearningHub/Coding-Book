@@ -58,14 +58,13 @@ class Solution1:
           topElems = topElems[0:k]
        
       return topElems
-from Solution1 import Solution1
-Sol1 = Solution1()
 ```
 
 ### Solution 2
 
 ```{code-cell} ipython3
 %%writefile Solution2.py
+from typing import List
 import heapq
 class Solution2:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
@@ -75,8 +74,6 @@ class Solution2:
         freq[i] = 1 + freq.get(i,0)
       
       return heapq.nlargest(k, freq.keys(), key = lambda i: freq[i])
-from Solution2 import Solution2
-Sol2 = Solution2()
 ```
 
 Runtime: 237 ms, faster than 16.96% of Python3 online submissions for Top K Frequent Elements.
@@ -86,6 +83,7 @@ Memory Usage: 18.6 MB, less than 71.64% of Python3 online submissions for Top K 
 
 ```{code-cell} ipython3
 %%writefile Solution3.py
+from typing import List
 class Solution3:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
 
@@ -107,8 +105,6 @@ class Solution3:
           if insert ==0:
             topK.append(i)
       return topK[0:k]
-from Solution3 import Solution3
-Sol3 = Solution3()
 ```
 
 Runtime: 299 ms, faster than 5.97% of Python3 online submissions for Top K Frequent Elements.
@@ -121,6 +117,12 @@ Memory Usage: 18.6 MB, less than 91.74% of Python3 online submissions for Top K 
 %load_ext line_profiler
 %load_ext memory_profiler
 import cProfile
+from Solution1 import Solution1
+Sol1 = Solution1()
+from Solution2 import Solution2
+Sol2 = Solution2()
+from Solution3 import Solution3
+Sol3 = Solution3()
 ```
 
 ### Example 1
