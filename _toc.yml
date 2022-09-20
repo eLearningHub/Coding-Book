@@ -13,6 +13,7 @@ chapters:
   - file: leetcode/0314-binary-tree
   - file: leetcode/0347-top-k-frequent-elements
   - file: leetcode/0408-valid-word-abbreviation
+  - file: leetcode/0437-path-sum-iii
   - file: leetcode/0445-add-two-numbers
   - file: leetcode/0527-word-abbreviation
   - file: leetcode/0719-custom-sort-string.md
