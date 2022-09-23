@@ -142,7 +142,7 @@ Sol1.pathSum(Tree, targetSum)
 Input:
 
 ```{code-cell} ipython3
-root = [5,4,8,11,null,13,4,7,2,null,null,5,1]
+root = [5, 4, 8, 11, None, 13, 4, 7, 2, None, None, 5, 1]
 targetSum = 22
 Output = 3
 Tree = TreeNode()
