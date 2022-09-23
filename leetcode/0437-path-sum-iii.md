@@ -92,7 +92,7 @@ class Solution1:
         
         tree = [root.val]
         tree = self.treeToList(root, tree)
-        num_rows = ceil(math.log(len(tree)+1, 2))
+        num_rows = math.ceil(math.log(len(tree)+1, 2))
         
         noPathsTargetSum = 0
         for length in range(1,num_rows+1):
