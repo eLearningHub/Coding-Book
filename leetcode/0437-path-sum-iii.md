@@ -109,7 +109,7 @@ class Solution1:
                         
                         sum_nodes += tree[2+j + k]
                         j = 2+j + k
-                        if sum_nodes == 8:
+                        if sum_nodes == targetSum:
                             eight = eight + 1
         return eight
 ```
