@@ -5,6 +5,7 @@ chapters:
 - file: dsa/index.md
   sections:
   - file: dsa/heaps.md
+  - file: dsa/dfs.md
 - file: leetcode/0000-index
   sections:
   - file: leetcode/0002-add-two-numbers

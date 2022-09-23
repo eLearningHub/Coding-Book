@@ -1,6 +1,12 @@
 # Data Structures and Algorithms
 
+## Data structures
+
 - [Heaps](heaps)
+
+## Algorithms
+
+- [Depth first search](dfs)
 
 ## References
 
