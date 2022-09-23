@@ -136,3 +136,16 @@ Tree = TreeNode()
 Sol1.listToTree(root, Tree)
 Sol1.pathSum(Tree)
 ```
+
+### Example 2
+
+Input:
+
+```{code-cell} ipython3
+root = [5,4,8,11,null,13,4,7,2,null,null,5,1]
+targetSum = 22
+Output = 3
+Tree = TreeNode()
+Sol1.listToTree(root, Tree)
+Sol1.pathSum(Tree)
+```
