@@ -129,7 +129,7 @@ Sol1 = Solution1()
 Input:
 
 ```{code-cell} ipython3
-root = [10,5,-3,3,2,null,11,3,-2,null,1]
+root = [10,5,-3,3,2,None,11,3,-2,None,1]
 targetSum = 8
 Output = 3
 Tree = TreeNode()
