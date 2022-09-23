@@ -134,7 +134,7 @@ targetSum = 8
 Output = 3
 Tree = TreeNode()
 Sol1.listToTree(root, Tree)
-Sol1.pathSum(Tree)
+Sol1.pathSum(Tree, targetSum)
 ```
 
 ### Example 2
@@ -147,5 +147,5 @@ targetSum = 22
 Output = 3
 Tree = TreeNode()
 Sol1.listToTree(root, Tree)
-Sol1.pathSum(Tree)
+Sol1.pathSum(Tree, targetSum)
 ```
