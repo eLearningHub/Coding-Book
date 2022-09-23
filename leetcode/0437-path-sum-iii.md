@@ -94,7 +94,7 @@ class Solution1:
         tree = self.treeToList(root, tree)
         num_rows = ceil(math.log(len(tree)+1, 2))
         
-        eight = 0
+        noPathsTargetSum = 0
         for length in range(1,num_rows+1):
             paths = self.pathOptions(length)
             for i in range(2**(num_rows-length)-1):
@@ -110,8 +110,8 @@ class Solution1:
                         sum_nodes += tree[2+j + k]
                         j = 2+j + k
                         if sum_nodes == targetSum:
-                            eight = eight + 1
-        return eight
+                            noPathsTargetSum = noPathsTargetSum + 1
+        return noPathsTargetSum
 ```
 
 ## Examples
