@@ -27,6 +27,7 @@ Constraints:
 ## Solution
 
 ```{code-cell} ipython3
+from typing import Optional
 import math
 
 # Definition for a binary tree node.
