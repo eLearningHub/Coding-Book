@@ -11,6 +11,6 @@ kernelspec:
   name: python3
 ---
 
-(feed)=
-# Social Network Feed
+(feeds)=
+# Social Network Feeds
 

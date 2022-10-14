@@ -6,6 +6,14 @@ chapters:
   sections:
   - file: dsa/heaps.md
   - file: dsa/dfs.md
+- file: system-design/index.md
+  section:
+  - file: system-design/search.md
+  - file: system-design/feeds.md
+  - file: system-design/recommendation.md
+  - file: system-design/perception.md
+  - file: system-design/nlp.md
+  - file: system-design/ads.md
 - file: leetcode/0000-index
   sections:
   - file: leetcode/0002-add-two-numbers
