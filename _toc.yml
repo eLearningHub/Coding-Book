@@ -7,7 +7,7 @@ chapters:
   - file: dsa/heaps.md
   - file: dsa/dfs.md
 - file: system-design/index.md
-  section:
+  sections:
   - file: system-design/search.md
   - file: system-design/feeds.md
   - file: system-design/recommendation.md
