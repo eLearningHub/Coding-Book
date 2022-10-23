@@ -13,3 +13,7 @@ kernelspec:
 
 (recommendation)=
 # Recommendation System
+
+## References
+
+* [Microsoft Recommenders](https://microsoft-recommenders.readthedocs.io/en/latest/)
