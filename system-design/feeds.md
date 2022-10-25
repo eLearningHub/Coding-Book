@@ -14,3 +14,7 @@ kernelspec:
 (feeds)=
 # Social Network Feeds
 
+## References
+
+- [t](https://github.com/sferik/t)
+- [rainbowstream](https://github.com/orakaro/rainbowstream)
