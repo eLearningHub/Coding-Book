@@ -13,3 +13,10 @@ kernelspec:
 
 (nlp)=
 # Natural Language Processing
+
+## References
+
+- [Awesome bots](https://github.com/DopplerHQ/awesome-bots)
+- [rasa](https://github.com/RasaHQ/rasa)
+- [botpress](https://botpress.com/)
+- [Chatbot](https://chatbot.obbne.com/)
