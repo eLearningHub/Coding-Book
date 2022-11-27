@@ -14,6 +14,10 @@ kernelspec:
 (feeds)=
 # Social Network Feeds
 
+## Work in progress
+
+* [sncli](https://github.com/eLearningHub/sncli)
+
 ## References
 
 - [t](https://github.com/sferik/t)
