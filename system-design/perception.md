@@ -13,3 +13,7 @@ kernelspec:
 
 (perception)=
 # Perception
+
+## References
+
+* [Machine Vision](https://wikihub.github.io/wiki-garden/#/page/machine%20vision)
